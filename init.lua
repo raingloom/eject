@@ -37,11 +37,6 @@ end
 ]=]
 
 
-function Object:__tostring()
-	return self._class._name..'<'..self._id..'>'
-end
-
-
 --[[--
 	Form a new subclass that extends the current class. This is the standard way of creating new classes. Metamethods are copied over _(anything that starts with "\_\_" is considered one)_.
 	param: name an optional name, defaults to AnonymousClass
